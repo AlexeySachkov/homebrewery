@@ -2,7 +2,7 @@ const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
 
-const OldBrewRenderer = require('depricated/brewRendererOld/brewRendererOld.jsx');
+const OldBrewRenderer = require('deprecated/brewRendererOld/brewRendererOld.jsx');
 
 const Markdown = require('homebrewery/markdown.js');
 const ErrorBar = require('./errorBar/errorBar.jsx');
@@ -139,7 +139,7 @@ const BrewRenderer = React.createClass({
 	},
 
 	render : function(){
-		if(this.props.brew.version == 1) return <OldBrewRenderer value={this.props.brew.text} />;
+		if(this.props.brew.version < 3) return <OldBrewRenderer value={this.props.brew.text} />;
 
 
 		return <div className='brewRenderer'
