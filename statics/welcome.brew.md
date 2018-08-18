@@ -4,7 +4,7 @@ Welcome traveler from an antique land. Please sit and tell us of what you have s
 ### Homebrew D&D made easy
 The Homebrewery makes the creation and sharing of authentic looking Fifth-Edition homebrews easy. It uses [Markdown](https://help.github.com/articles/markdown-basics/) with a little CSS magic to make your brews come to life.
 
-**Try it! **Simply edit the text on the left and watch it *update live* on the right.
+**Try it!** Simply edit the text on the left and watch it *update live* on the right.
 
 
 
@@ -32,9 +32,7 @@ This tool will **always** be free, never have ads, and I will never offer any "p
 >
 > If you want to save ink or have a monochrome printer, add the **Ink Friendly** snippet to your brew before you print
 
-
-```
-```
+\column
 
 ## Big things coming in v3.0.0
 With the next major release of Homebrewery, v3.0.0, this tool *will no longer support raw HTML input for brew code*. All brews made previous to the release of v3.0.0 will still render normally.
@@ -77,9 +75,7 @@ ___
 * **HTML** can be used to get *just* the right look for your homebrew. I've included some examples in the snippet icons above the editor.
 
 
-
-```
-```
+\column
 
 
 ### Images
