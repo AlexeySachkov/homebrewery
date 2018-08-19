@@ -77,12 +77,12 @@ module.exports = {
 
 
 
-		return `{{toc
+		return `\`\`\` toc
 # Contents
 
 ${markdown}
 
-}}`;
+\`\`\``;
 /*
 
 - ### [**4** *Preface*](#p3)

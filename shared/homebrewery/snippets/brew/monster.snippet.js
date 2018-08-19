@@ -40,7 +40,7 @@ module.exports = {
 
 		const stats = '';
 
-		return `{{monster
+		return `\`\`\` monster
 ## ${Data.rand('creatures')}
 *${Data.rand('sizes')}, ${Data.rand('alignments')}*
 
@@ -67,7 +67,7 @@ Abilities
 
 ### Actions
 
-}}`
+\`\`\``
 
 
 	}

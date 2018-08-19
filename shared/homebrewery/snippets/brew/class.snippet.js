@@ -27,12 +27,12 @@ module.exports = {
 			].join(' | ') + ' |';
 		}).join('\n');
 
-		return `{{frame,wide
+		return `\`\`\` frame wide
 ##### ${Data.rand('classes')}
 | Level | Proficiency Bonus | Features | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
 |:---:|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 ${rows}
-}}`;
+\`\`\``;
 	},
 
 
@@ -49,12 +49,12 @@ ${rows}
 		}).join('\n');
 
 
-		return `{{frame,wide
+		return `\`\`\` frame wide
 ##### ${Data.rand('classes')}
 | Level | Proficiency Bonus | Features | 1st | 2nd | 3rd | 4th | 5th |
 |:---:|:---:|:---|:---:|:---:|:---:|:---:|:---:|
 ${rows}
-}}`;
+\`\`\``;
 
 	},
 
@@ -70,12 +70,12 @@ ${rows}
 			].join(' | ') + ' |';
 		}).join('\n');
 
-		return `{{frame
+		return `\`\`\` frame
 ##### ${Data.rand('classes')}
 | Level | Proficiency Bonus | Features | ${Data.rand('abilities')} |
 |:---:|:---:|:---|:---:|
 ${rows}
-}}`;
+\`\`\``;
 	}
 
 
