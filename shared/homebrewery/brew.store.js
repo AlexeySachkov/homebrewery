@@ -9,6 +9,7 @@ let State = {
 	brew : {
 		text : '',
 		style : '',
+		style_preset : 'default',
 		shareId : undefined,
 		editId : undefined,
 		createdAt : undefined,
@@ -62,6 +63,9 @@ Store.getBrewCode = ()=>{
 };
 Store.getBrewStyle = ()=>{
 	return State.brew.style;
+};
+Store.getBrewStylePreset = () => {
+    return State.brew.style_preset;
 };
 Store.getMetaData = ()=>{
 	return _.omit(State.brew, ['text', 'style']);

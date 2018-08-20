@@ -18,6 +18,7 @@ const BrewEditor = React.createClass({
 			brew : {
 				text : '',
 				style : '',
+				style_preset : 'default'
 			},
 
 			onCodeChange : ()=>{},

@@ -1,5 +1,9 @@
 
 @import (less) './shared/homebrewery/phb_style/phb.less';
+@import (less) './shared/homebrewery/4e_style/phb.less';
+
+@styles: default, 4e;
+
 .pane{
 	position : relative;
 }
@@ -29,11 +33,30 @@
 	}
 	.pages{
 		margin : 30px 0px;
-		&>.phb{
+
+		& > .phb-default {
 			margin-right  : auto;
 			margin-bottom : 30px;
 			margin-left   : auto;
 			box-shadow    : 1px 4px 14px #000;
 		}
+
+		& > .phb-4e {
+			margin-right  : auto;
+			margin-bottom : 30px;
+			margin-left   : auto;
+			box-shadow    : 1px 4px 14px #000;
+		}
+
+		/* available only in less 3.7.0
+		each(@styles, {
+			& > .phb-@{value} {
+				margin-right  : auto;
+				margin-bottom : 30px;
+				margin-left   : auto;
+				box-shadow    : 1px 4px 14px #000;
+			}
+		});
+		*/
 	}
 }

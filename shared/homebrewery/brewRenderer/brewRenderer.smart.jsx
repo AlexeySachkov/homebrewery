@@ -11,6 +11,7 @@ module.exports = Store.createSmartComponent(BrewRenderer, () => {
 
 		brewText : Store.getBrewCode(),
 		style : Store.getBrewStyle(),
+		style_preset : Store.getBrewStylePreset(),
 
 
 		errors : Store.getErrors()

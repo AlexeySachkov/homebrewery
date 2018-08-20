@@ -1,0 +1,39 @@
+//TODO: come up with fun color names
+
+@background            : #FFFFFF;
+@noteGreen             : #e0e5c1;
+@headerUnderline       : #c9ad6a;
+@horizontalRule        : #9c2b1b;
+@headerText            : #133D5D;
+@h3Text                : #231F20;
+@monsterStatBackground : #FDF1DC;
+
+
+
+.colorElements(@color){
+	table tbody{
+		tr:nth-child(odd){
+			background-color : @color;
+		}
+	}
+	&.note:before{
+		background-color: @color;
+	}
+}
+
+@crimson : #58180D;
+@red : #9c2b1b;
+@gold : #c9ad6a; //brown?
+@green : #e0e5c1;
+@yellow : #faf7ea; //same as background?
+@teal : blue;
+@blue : blue;
+
+
+//TODO make a color mixin generator
+.teal{ .colorElements(@teal); }
+.blue{ .colorElements(@blue); }
+.green{ .colorElements(@green); }
+.yellow{ .colorElements(@yellow); }
+.gold{ .colorElements(@gold); }
+.red{ .colorElements(@red); }

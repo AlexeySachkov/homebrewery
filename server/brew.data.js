@@ -12,19 +12,20 @@ const BrewSchema = mongoose.Schema({
 	text : {type : String, default : ""},
 	style : {type : String, default : ""},
 
-	title       : {type : String, default : ""},
-	description : {type : String, default : ""},
-	tags        : {type : String, default : ""},
-	thumbnail   : {type : String, default : ""},
-	systems     : [String],
-	authors     : [String],
-	published   : {type : Boolean, default : false},
+	title        : {type : String, default : ""},
+	description  : {type : String, default : ""},
+	tags         : {type : String, default : ""},
+	thumbnail    : {type : String, default : ""},
+	systems      : [String],
+	style_preset : {type : String, default : "default"},
+	authors      : [String],
+	published    : {type : Boolean, default : false},
 
-	createdAt  : { type: Date, default: Date.now },
-	updatedAt  : { type: Date, default: Date.now},
-	lastViewed : { type: Date, default: Date.now},
-	views      : {type:Number, default:0},
-	version    : {type: Number, default:3}
+	createdAt   : { type: Date, default: Date.now },
+	updatedAt   : { type: Date, default: Date.now},
+	lastViewed  : { type: Date, default: Date.now},
+	views       : {type:Number, default:0},
+	version     : {type: Number, default:3}
 }, {
 	versionKey: false,
 	toJSON : {

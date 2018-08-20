@@ -19,7 +19,8 @@ const BrewRenderer = React.createClass({
 		return {
 			brew : {
 				text : '',
-				style : ''
+				style : '',
+				style_preset : 'default'
 			},
 
 
@@ -107,13 +108,15 @@ const BrewRenderer = React.createClass({
 	},
 
 	renderDummyPage : function(index){
-		return <div className='phb v2' id={`p${index + 1}`} key={index}>
+		let classAttr = 'phb-' + this.props.brew.style_preset + ' v2';
+		return <div className={classAttr} id={`p${index + 1}`} key={index}>
 			<i className='fa fa-spinner fa-spin' />
 		</div>
 	},
 
 	renderPage : function(pageText, index){
-		return <div className='phb v2' id={`p${index + 1}`} dangerouslySetInnerHTML={{__html:Markdown.render(pageText)}} key={index} />
+		let classAttr = 'phb-' + this.props.brew.style_preset + ' v2';
+		return <div className={classAttr} id={`p${index + 1}`} dangerouslySetInnerHTML={{__html:Markdown.render(pageText)}} key={index} />
 	},
 
 	renderPages : function(){

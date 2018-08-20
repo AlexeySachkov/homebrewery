@@ -15,7 +15,8 @@ const MetadataEditor = React.createClass({
 				tags : '',
 				published : false,
 				authors : [],
-				systems : []
+				systems : [],
+				style_preset : 'default'
 			},
 			onChange : ()=>{}
 		};
@@ -86,6 +87,13 @@ const MetadataEditor = React.createClass({
 		}
 	},
 
+	renderStylePreset : function() {
+		return <select onChange={this.handleFieldChange.bind(null, 'style_preset')} value={this.props.metadata.style_preset}>
+			<option value='default'>default</option>
+			<option value='4e'>4e</option>
+		</select>;
+	},
+
 	renderDelete : function(){
 		if(!this.props.metadata.editId) return;
 
@@ -145,6 +153,11 @@ const MetadataEditor = React.createClass({
 				<input type='text' className='value'
 					value={this.props.metadata.thumbnail}
 					onChange={this.handleFieldChange.bind(null, 'thumbnail')} />
+			</div>
+
+			<div className='field style_preset'>
+				<label>Style preset</label>
+				{this.renderStylePreset()}
 			</div>
 
 			<div className='field systems'>
