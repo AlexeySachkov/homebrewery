@@ -6,7 +6,7 @@ let CodeMirror;
 if(typeof navigator !== 'undefined'){
 	CodeMirror = require('codemirror');
 	//Language Modes
-	require('codemirror/mode/gfm/gfm.js'); //Github flavoured markdown
+	require('codemirror/mode/gfm/gfm.js'); Github flavoured markdown
 	require('codemirror/mode/javascript/javascript.js');
 	require('codemirror/mode/css/css.js');
 }
@@ -41,7 +41,9 @@ const CodeEditor = React.createClass({
 			value        : this.props.value,
 			lineNumbers  : true,
 			lineWrapping : this.props.wrap,
-			mode         : this.props.language,
+			mode         : { name : this.props.language,
+				highlightFormatting: true
+			},
 			indentWithTabs : true,
 			tabSize : 2
 		});

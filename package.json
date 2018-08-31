@@ -22,7 +22,7 @@
     "basic-auth": "1.0.3",
     "body-parser": "1.14.2",
     "classnames": "2.2.0",
-    "codemirror": "5.22.0",
+    "codemirror": "5.39.2",
     "cookie-parser": "1.4.3",
     "egads": "1.0.1",
     "express": "4.13.3",

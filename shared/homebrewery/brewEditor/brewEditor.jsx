@@ -111,9 +111,6 @@ const BrewEditor = React.createClass({
 				r.push(lineNumber);
 			}
 
-			if(_.startsWith(line, '{{') || _.startsWith(line, '}}')){
-				codeMirror.addLineClass(lineNumber, 'text', 'block');
-			}
 			return r;
 		}, []);
 		return lineNumbers
